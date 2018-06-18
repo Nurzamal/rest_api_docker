@@ -1,0 +1,18 @@
+version: '2.0'
+services:
+  app:
+    image: rest_api
+    ports:
+      - 9876:80
+    volumes:
+      - .:/var/www
+    links:  
+      - mysql
+    env_file:
+      - .env_local
+  mysql:
+    image: mysql
+    ports:
+      - 3306:3306
+    env_file:
+      - .env_local

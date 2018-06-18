@@ -1,0 +1,9 @@
+[
+	{
+		"name": "John",
+		"email": "john.doe@toptal.com", 
+		"password": "toptal123", 
+		"password_confirmation": "toptal123",
+		"role": 1
+	}
+]
